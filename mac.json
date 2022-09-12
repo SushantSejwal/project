@@ -1,0 +1,31 @@
+[
+    {
+        "name": "MacBook Air",
+        "processor": [["Apple M2 chip with 8-core CPU, 8-core GPU, 16-core Neural Engine", 0],["Apple M2 chip with 8-core CPU, 10-core GPU, 16-core Neural Engine", 100]],
+        "ram":[[8, 0], [16, 200], [24, 400]],
+        "storage":[[256, 0],[512, 200],[1000, 400],[2000, 800]],
+        "price":999,
+        "type":"notebook"
+    }, {
+        "name": "MacBook Pro 13",
+        "processor": [["Apple M2 chip with 8-core CPU, 10-core GPU, 16-core Neural Engine", 0]],
+        "ram":[[8, 0], [16, 200], [24, 400]],
+        "storage":[[256, 0],[512, 200],[1000, 400],[2000, 800]],
+        "price":1299,
+        "type":"notebook"
+    }, {
+        "name": "MacBook Pro 14",
+        "processor": [["Apple M1 Pro with 8-core CPU, 14-core GPU, 16-core Neural Engine", 0],["Apple M1 Pro with 10-core CPU, 14-core GPU, 16-core Neural Engine", 200], ["Apple M1 Pro with 10-core CPU, 16-core GPU, 16-core Neural Engine",300], ["Apple M1 Max with 10-core CPU, 24-core GPU, 16-core Neural Engine", 500], ["Apple M1 Max with 10-core CPU, 32-core GPU, 16-core Neural Engine", 700]],
+        "ram":[[16, 0], [32, 400], [64, 800]],
+        "storage":[[512, 0],[1000, 200],[2000, 600],[4000, 1200],[8000, 2400]],
+        "price":1999,
+        "type":"notebook"
+    }, {
+        "name": "MacBook Pro 16",
+        "processor": [["Apple M1 Pro with 10-core CPU, 16-core GPU, 16-core Neural Engine",0], ["Apple M1 Max with 10-core CPU, 24-core GPU, 16-core Neural Engine", 200], ["Apple M1 Max with 10-core CPU, 32-core GPU, 16-core Neural Engine", 400]],
+        "ram":[[16, 0], [32, 400], [64, 800]],
+        "storage":[[512, 0],[1000, 200],[2000, 600],[4000, 1200],[8000, 2400]],
+        "price":2499,
+        "type":"notebook"
+    }
+]

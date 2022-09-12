@@ -1,0 +1,6 @@
+--help
+show
+info 
+buy 
+bag
+rm 
