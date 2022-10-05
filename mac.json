@@ -1,31 +1,101 @@
 [
     {
         "name": "MacBook Air",
-        "processor": [["Apple M2 chip with 8-core CPU, 8-core GPU, 16-core Neural Engine", 0],["Apple M2 chip with 8-core CPU, 10-core GPU, 16-core Neural Engine", 100]],
+        "processor":[["Apple M2 chip with 8-core CPU, 8-core GPU, 16-core Neural Engine", 0],
+                    ["Apple M2 chip with 8-core CPU, 10-core GPU, 16-core Neural Engine", 100]],
         "ram":[[8, 0], [16, 200], [24, 400]],
         "storage":[[256, 0],[512, 200],[1000, 400],[2000, 800]],
         "price":999,
+        "display-inbuild": true,
+        "display-size": 13.6,
+        "in-box": ["Macbook Air", "67 watt adapter","usb type C to magsafe 3 cable"],
         "type":"notebook"
+
     }, {
         "name": "MacBook Pro 13",
         "processor": [["Apple M2 chip with 8-core CPU, 10-core GPU, 16-core Neural Engine", 0]],
         "ram":[[8, 0], [16, 200], [24, 400]],
         "storage":[[256, 0],[512, 200],[1000, 400],[2000, 800]],
         "price":1299,
+        "display-inbuild": true,
+        "display-size": 13.3,
+        "in-box": ["Macbook Pro", "67 watt adapter","usb type C to usb type C"],
         "type":"notebook"
+
     }, {
         "name": "MacBook Pro 14",
-        "processor": [["Apple M1 Pro with 8-core CPU, 14-core GPU, 16-core Neural Engine", 0],["Apple M1 Pro with 10-core CPU, 14-core GPU, 16-core Neural Engine", 200], ["Apple M1 Pro with 10-core CPU, 16-core GPU, 16-core Neural Engine",300], ["Apple M1 Max with 10-core CPU, 24-core GPU, 16-core Neural Engine", 500], ["Apple M1 Max with 10-core CPU, 32-core GPU, 16-core Neural Engine", 700]],
+        "processor":[["Apple M1 Pro with 8-core CPU, 14-core GPU, 16-core Neural Engine", 0],
+                    ["Apple M1 Pro with 10-core CPU, 14-core GPU, 16-core Neural Engine", 200], 
+                    ["Apple M1 Pro with 10-core CPU, 16-core GPU, 16-core Neural Engine",300], 
+                    ["Apple M1 Max with 10-core CPU, 24-core GPU, 16-core Neural Engine", 500], 
+                    ["Apple M1 Max with 10-core CPU, 32-core GPU, 16-core Neural Engine", 700]],
         "ram":[[16, 0], [32, 400], [64, 800]],
         "storage":[[512, 0],[1000, 200],[2000, 600],[4000, 1200],[8000, 2400]],
         "price":1999,
+        "display-inbuild": true,
+        "display-size": 14.2,
+        "in-box": ["Macbook Pro", "96 watt adapter","usb type C to magsafe 3 cable"],
         "type":"notebook"
+
     }, {
         "name": "MacBook Pro 16",
-        "processor": [["Apple M1 Pro with 10-core CPU, 16-core GPU, 16-core Neural Engine",0], ["Apple M1 Max with 10-core CPU, 24-core GPU, 16-core Neural Engine", 200], ["Apple M1 Max with 10-core CPU, 32-core GPU, 16-core Neural Engine", 400]],
+        "processor":[["Apple M1 Pro with 10-core CPU, 16-core GPU, 16-core Neural Engine",0], 
+                    ["Apple M1 Max with 10-core CPU, 24-core GPU, 16-core Neural Engine", 200], 
+                    ["Apple M1 Max with 10-core CPU, 32-core GPU, 16-core Neural Engine", 400]],
         "ram":[[16, 0], [32, 400], [64, 800]],
         "storage":[[512, 0],[1000, 200],[2000, 600],[4000, 1200],[8000, 2400]],
         "price":2499,
+        "display-inbuild": true,
+        "display-size": 16.2,
+        "in-box": ["Macbook Pro", "140 watt adapter","usb type C to magsafe 3 cable"],
         "type":"notebook"
+    }, {
+        "name": "iMac",
+        "processor": [["Apple M1 Pro with 8-core CPU, 8-core GPU, 16-core Neural Engine",0]],
+        "ram":[[8, 0], [16, 200]],
+        "storage":[[256, 0],[512, 200],[1000, 400],[2000, 800]],
+        "price":1499,
+        "display-inbuild": true,
+        "display-size": 24,
+        "in-box": ["iMac", "Power adapter with ethernet input"],
+        "type":"desktop"
+
+    }, {
+        "name": "Mac mini",
+        "processor": [["Apple M1 Pro with 8-core CPU, 8-core GPU, 16-core Neural Engine",0]],
+        "ram":[[8, 0], [16, 200]],
+        "storage":[[256, 0],[512, 200],[1000, 400],[2000, 800]],
+        "price":699,
+        "display-inbuild": false,
+        "in-box": ["Mac mini", "Power cord"],
+        "type":"desktop"
+
+    }, {
+        "name": "Mac Studio",
+        "processor":[["Apple M1 Max with 10-core CPU, 24-core GPU, 16-core Neural Engine",0],
+                    ["Apple M1 Max with 10-core CPU, 32-core GPU, 16-core Neural Engine",200],
+                    ["Apple M1 Ultra with 20-core CPU, 48-core GPU, 32-core Neural Engine",1400],
+                    ["Apple M1 Ultra with 20-core CPU, 64-core GPU, 32-core Neural Engine",2400]],
+        "ram":[[32, 0], [64, 400],[128, 1200]],
+        "storage":[[512, 0],[1000, 200],[2000, 600],[4000, 1200],[8000, 2400]],
+        "price":1499,
+        "display-inbuild": false,
+        "in-box": ["Mac Studio", "Power cord"],
+        "type":"desktop"
+
+    }, {
+        "name": "Pro Display XDR",
+        "display":[["Standard glass",4999],["Nano texture glass",5999]],
+        "stand":[["Pro stand", 999], ["VESA Mount adapter", 199]],
+        "about": "32 inch 6k Retina display. The brightest display for pros",
+        "type":"display"
+
+    }, {
+        "name": "Studio Display",
+        "display":[["Standard glass",1599],["Nano texture glass",1899]],
+        "stand":[["Tilt adjustible stand", 0], ["Tilt- and height-adjustable stand", 400], ["VESA Mount adapter", 0]],
+        "about": "27 inch 5k Retina display. An amazing display for studio",
+        "type":"display"
     }
+    
 ]
