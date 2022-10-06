@@ -1,3 +1,6 @@
+import pickle
+import os
+
 def remove():
     '''remove product from bag'''
     order_no = 1
@@ -17,19 +20,27 @@ def remove():
                 while True:
                     try:
                         ordered_item = pickle.load(bag_file)
-                        print()
-                        print(f'product {order_no}')
-                        print(f'        name: {ordered_item[0]}')
-                        print(f'        processor: {ordered_item[1]}')
+                        if ordered_item[-1] == "display":
+                            print()
+                            print(f'product {order_no}')
+                            print(f'        name: {ordered_item[0]}')
+                            print(f'        glass: {ordered_item[1]}')
+                            print(f'        stand: {ordered_item[2]}')
+                            print(f'        price: {ordered_item[3]}')
+                            order_no += 1
 
-                        if ordered_item[2] > 999: print(f'        ram: {ordered_item[2] / 1000}TB')
-                        else: print(f'        ram: {ordered_item[2]}GB')
+                        else:
+                            print()
+                            print(f'product {order_no}')
+                            print(f'        name: {ordered_item[0]}')
+                            print(f'        processor: {ordered_item[1]}')
+                            print(f'        ram: {ordered_item[2]}GB')
 
-                        if ordered_item[3] > 999: print(f'        storage: {ordered_item[3] / 1000}TB')
-                        else: print(f'        storage: {ordered_item[3]}GB')
+                            if ordered_item[3] > 999: print(f'        storage: {ordered_item[3] / 1000}TB')
+                            else: print(f'        storage: {ordered_item[3]}GB')
 
-                        print(f'        price: ${ordered_item[4]}')
-                        order_no += 1
+                            print(f'        price: ${ordered_item[4]}')
+                            order_no += 1
                     except Exception:
                         break
                     
@@ -75,11 +86,11 @@ def remove():
         # this will run when file will be empty
         else:
             print()
-            print('your bag is empty buy, buy some products and they will show here')           
+            print('your bag is empty')           
             print()
     
     # this will run when file doesn't exit
     else:
         print()
-        print('your bag is empty buy, buy some products and they will show here')           
+        print('your bag is empty')           
         print()

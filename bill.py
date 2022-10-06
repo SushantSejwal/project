@@ -1,3 +1,5 @@
+import pickle
+
 def bill():
     data_exist = False
     bill = 0
@@ -16,11 +18,11 @@ def bill():
             while True:
                 try:
                     rec = pickle.load(bill_file)
-                    bill += rec[-1]
+                    bill += rec[-2]
                 except Exception:
                     break
         print(f'the total amount you have to pay is ${bill}')
     else:
         print()
-        print('your bag is empty buy, buy some products and they will show here')           
+        print('your bag is empty')           
         print()     

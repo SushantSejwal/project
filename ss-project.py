@@ -1,8 +1,6 @@
 # program to buy Apple computers 
 
-import pickle
 import json
-import os
 
 # project operations 
 from help import *
@@ -26,7 +24,7 @@ print('\n\n===***===***===  Welcome to Macbook Store  ===***===***===\n')
 
 while True:
     print()
-    main_cmd = input('\nenter a command or type --help for help or exit to exit \n -->  ').lower().strip()
+    main_cmd = input('enter a command or type help for help or exit to exit \n -->  ').lower().strip()
     print()
     if main_cmd == 'exit' or main_cmd == 'e':
         break

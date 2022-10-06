@@ -100,6 +100,8 @@ def buy(name, product_data):
                         continue
                 print(f'  total price = {total_price}')
                 file_data.append(total_price)
+                # print(product["type"])
+                file_data.append(product["type"])
                 pickle.dump(file_data, brought_product_file)
                 brought_product_file.close()
 
@@ -115,7 +117,7 @@ def buy(name, product_data):
                 print(f'  Base Price : ${product["price"]}')
                 
                 mac_price = product["price"]
-                deafult_file_data = [product["name"],product["processor"][0][0], product["ram"][0][0], product["storage"][0][0], mac_price]
+                deafult_file_data = [product["name"],product["processor"][0][0], product["ram"][0][0], product["storage"][0][0], mac_price, product["type"]]
                 
 
                 # Customizing mac or not
@@ -139,7 +141,8 @@ def buy(name, product_data):
                         print()
 
                         if product["name"] == "Mac Studio":
-                            print('\n **NOTE** choose M1 ultra to maximize RAM upto 128GB\n')
+                            print('\n **NOTE** choose M1 ultra to maximize RAM upto 128GB')
+                            print(' **NOTE** choosing M1 ultra will make 32GB RAM option unavailable\n')
 
                         print('which processor is right for you ?')
                         for product in product_data:
@@ -315,6 +318,7 @@ def buy(name, product_data):
                                 break
                             
                         file_data.append(mac_price)
+                        file_data.append(product["type"])
                         pickle.dump(file_data, brought_product_file)
                         print('order placed, check you bag to see the product')
                         brought_product_file.close()
