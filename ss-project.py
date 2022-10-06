@@ -58,3 +58,6 @@ while True:
         
     elif main_cmd == 'bill':
         bill()
+
+    else:
+        print('type correct command')

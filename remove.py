@@ -82,6 +82,7 @@ def remove():
             with open('bag.sushant', 'ab') as bag_file:
                 for i in not_to_delete:
                     pickle.dump(i, bag_file)
+            print('selected product is removed from the bag')
         
         # this will run when file will be empty
         else:
